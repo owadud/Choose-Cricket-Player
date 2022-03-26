@@ -1,5 +1,7 @@
 import React from 'react';
 import './PlayerList.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const PlayerList = ({player,handleHire}) => {
     // const {player,handleHire} =props;
@@ -15,7 +17,8 @@ const PlayerList = ({player,handleHire}) => {
             </div>
 
             <button onClick={()=>handleHire(player)} className="btn-hire">
-                <h2>Hire</h2>
+                <h2>Hire <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></h2>
+                
             </button>
             
             

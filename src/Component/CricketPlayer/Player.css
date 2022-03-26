@@ -10,3 +10,10 @@
 .selectedPlayer{
     background-color: rgb(240, 183, 183);
 }
+
+@media only screen and (max-width: 600px) {
+    .player-container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }

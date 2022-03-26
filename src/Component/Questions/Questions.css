@@ -1,0 +1,8 @@
+.question{
+    text-align: center;
+    padding:50px 0;
+}
+.firstQuestion,.secondQuestion{
+    width:90%;
+    margin: 0 auto;
+}
