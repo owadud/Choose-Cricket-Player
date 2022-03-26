@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Online Cricket League
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My Project Live Link: (https://graceful-granita-f81de3.netlify.app/).
 
 ## Available Scripts
 
