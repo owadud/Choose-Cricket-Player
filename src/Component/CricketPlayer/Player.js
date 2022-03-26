@@ -16,11 +16,23 @@ const Player = () => {
     },[])
 
     const handleHire = (player)=>{
-        // console.log(player);
+         
         const newHire =[...hire,player];
         setHire(newHire);
     }
 
+    const clearCart = ()=>{
+       
+        setHire([]);
+    }
+
+    const handleRandomPlayers=()=>{
+        const len = hire.length;
+        let randomPlayer =Math.floor(Math.random() * len);
+        const newHire =hire[randomPlayer];
+        setHire([newHire]);
+        console.log(newHire);
+    }
 
     return (
         <div className='player'>
@@ -34,7 +46,7 @@ const Player = () => {
                     }
            </div>
            <div className="selectedPlayer">
-                    <Hire hire={hire}></Hire>
+                    <Hire hire={hire} clearCart={clearCart} handleRandomPlayers={handleRandomPlayers}></Hire>
            </div>
 
         </div>
