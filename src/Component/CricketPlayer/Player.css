@@ -1,0 +1,12 @@
+.player{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+.player-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.selectedPlayer{
+    background-color: rgb(240, 183, 183);
+}

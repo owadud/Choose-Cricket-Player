@@ -1,0 +1,24 @@
+.player-list img{
+    width:250px;
+    height:250px;
+}
+.player-list{
+    border:1px solid gray;
+    border-radius: 5px;
+    background-color: #f5ebeb;
+    text-align:center;
+    position:relative;
+}
+.btn-hire{
+    width:100%;
+    background-color: #fff;
+    border-radius:5px;
+    border:0;
+    cursor: pointer;
+   
+    
+}
+.btn-hire:hover{
+    background-color: rgb(128, 68, 68);
+   
+}
