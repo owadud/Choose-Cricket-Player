@@ -31,22 +31,26 @@ const Player = () => {
         let randomPlayer =Math.floor(Math.random() * len);
         const newHire =hire[randomPlayer];
         setHire([newHire]);
-        console.log(newHire);
+    }
+
+    const handleRemove = (playerId)=>{
+        const updatedHire = hire.filter(player => player.id !== playerId);
+        setHire(updatedHire);
     }
 
     return (
         <div className='player'>
            <div className="player-container">
                     {
-                        players.map(player=><PlayerList key={player.id} player={player} 
+                        players.filter(player => !hire.some(hiredPlayer => hiredPlayer.id === player.id))
+                        .map(player=><PlayerList key={player.id} player={player} 
                         handleHire={handleHire}>
-
 
                         </PlayerList>)
                     }
            </div>
            <div className="selectedPlayer">
-                    <Hire hire={hire} clearCart={clearCart} handleRandomPlayers={handleRandomPlayers}></Hire>
+                    <Hire hire={hire} clearCart={clearCart} handleRandomPlayers={handleRandomPlayers} handleRemove={handleRemove}></Hire>
            </div>
 
         </div>
